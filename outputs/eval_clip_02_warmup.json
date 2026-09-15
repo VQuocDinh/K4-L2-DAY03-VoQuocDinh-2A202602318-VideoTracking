@@ -1,0 +1,75 @@
+{
+  "clip": "clip_02",
+  "frames": 60,
+  "iou_threshold": 0.5,
+  "pred_file": "annotations\\clip_02\\gt.txt",
+  "gt_file": "data\\clips\\clip_02\\gt\\gt.txt",
+  "pred_label": "PRED annotations\\clip_02\\gt.txt",
+  "gt_label": "GT   data\\clips\\clip_02\\gt\\gt.txt",
+  "metrics": {
+    "HOTA": 0.8386,
+    "DetA": 0.8133,
+    "AssA": 0.8783,
+    "LocA": 0.8782,
+    "IDF1": 0.9722,
+    "IDTP": 227,
+    "IDFP": 13,
+    "IDFN": 0,
+    "MOTA": 0.9427,
+    "MOTP": 0.8658,
+    "IDSW": 0,
+    "FP": 13,
+    "FN": 0,
+    "GT_boxes": 227,
+    "PRED_boxes": 240
+  },
+  "gate": {
+    "checks": {
+      "IDF1": {
+        "value": 0.9721627408993576,
+        "required": 0.8,
+        "passed": true
+      },
+      "MOTA": {
+        "value": 0.9427312775330396,
+        "required": 0.75,
+        "passed": true
+      },
+      "MOTP": {
+        "value": 0.8658291761861986,
+        "required": 0.7,
+        "passed": true
+      }
+    },
+    "passed": true
+  },
+  "diagnostics": {
+    "missed_gt_tracks": [],
+    "fragmented_gt_tracks": [],
+    "partially_covered_gt_tracks": [],
+    "ghost_pred_tracks": [
+      {
+        "pred_track": 5,
+        "reason": "còn bbox sau khi track tham chiếu 4 đã rời khung",
+        "frames": [
+          57,
+          60
+        ],
+        "length": 4
+      },
+      {
+        "pred_track": 4,
+        "reason": "không khớp track tham chiếu nào",
+        "frames": [
+          1,
+          2
+        ],
+        "length": 2
+      }
+    ],
+    "id_switches": [],
+    "loose_boxes": [],
+    "n_gt_tracks": 6,
+    "n_pred_tracks": 7
+  }
+}
